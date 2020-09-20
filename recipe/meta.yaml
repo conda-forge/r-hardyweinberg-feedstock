@@ -1,4 +1,4 @@
-{% set version = "1.6.7" %}
+{% set version = "1.6.8" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/HardyWeinberg_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/HardyWeinberg/HardyWeinberg_{{ version }}.tar.gz
-  sha256: ace868d8fbc19ff6d914a95594b469c37797d385ed65fec18f1991932132ad8d
+  sha256: 277e20839f8fd5a941792ca445de364c26b19bd4f65697b215939d7c670dd22c
 
 build:
   merge_build_host: true  # [win]
